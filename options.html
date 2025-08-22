@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Amazon Checkout Helper – Options</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; }
+      label { display:block; margin: 10px 0 4px; font-weight:600; }
+      input[type="text"], input[type="number"] { width: 420px; padding:8px; }
+      .row { margin-bottom: 12px; }
+      .hint { color:#555; font-size: 12px; }
+      .ok { color: green; }
+    </style>
+  </head>
+  <body>
+    <h1>Amazon Checkout Helper – Options</h1>
+
+    <div class="row">
+      <label><input type="checkbox" id="autoOn"> Enable auto-select on checkout pages</label>
+    </div>
+
+    <div class="row">
+      <label for="addressId">Address ID</label>
+      <input id="addressId" type="text" placeholder="e.g., A3XYZ12345ABC" />
+      <div class="hint">Inspect your address tile in checkout and copy its <code>addressId</code>.</div>
+    </div>
+
+    <div class="row">
+      <label for="cardId">Card Instrument ID</label>
+      <input id="cardId" type="text" placeholder="e.g., 0h_PU_CUS_31a2e2c0..." />
+      <div class="hint">Inspect your card radio input and copy the <code>instrumentId</code> from its value.</div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <label for="addressName">Your name (as shown on the address tile)</label>
+      <input id="addressName" type="text" placeholder="e.g., Zack Patton" />
+      <div class="hint">Fallback option. Optional.</div>
+    </div>
+
+    <div class="row">
+      <label for="addressFragment">Address fragment to match</label>
+      <input id="addressFragment" type="text" placeholder="e.g., 1234 Elm, Dallas 75204" />
+      <div class="hint">Fallback option. Use something unique so it doesn't match your family's addresses.</div>
+    </div>
+
+    <div class="row">
+      <label for="cardLast4">Card last-4</label>
+      <input id="cardLast4" type="text" maxlength="4" placeholder="####" />
+      <div class="hint">Fallback option. Only the last-4 is stored.</div>
+    </div>
+
+    <div class="row">
+      <label for="cardNickname">Card nickname (optional)</label>
+      <input id="cardNickname" type="text" placeholder="e.g., Zack Visa" />
+    </div>
+
+    <div class="row">
+      <label for="delayMs">UI wait (ms)</label>
+      <input id="delayMs" type="number" min="100" step="50" />
+      <div class="hint">Delay before each attempt; increase if your pages load slowly.</div>
+    </div>
+
+    <button id="save">Save</button>
+    <span id="status"></span>
+
+    <script src="options.js"></script>
+  </body>
+</html>

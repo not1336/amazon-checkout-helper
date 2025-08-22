@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Amazon Checkout Helper",
+    "version": "1.0.1",
+    "description": "Auto-select your address and card on Amazon checkout pages without changing account defaults.",
+    "permissions": ["storage", "scripting", "activeTab"],
+    "host_permissions": [
+    "https://www.amazon.com/*",
+    "https://smile.amazon.com/*"
+    ],
+    "options_page": "options.html",
+    "content_scripts": [
+    {
+    "matches": [
+        "https://www.amazon.com/gp/buy/*",
+        "https://www.amazon.com/checkout/*",
+        "https://smile.amazon.com/gp/buy/*",
+        "https://smile.amazon.com/checkout/*"
+    ],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+    }
+    ]
+    }
