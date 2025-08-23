@@ -14,7 +14,6 @@ This is especially useful for **shared Prime accounts**, business + personal car
 - ✅ Auto-selects your preferred **credit/debit card**  
 - ✅ Works without changing your Amazon defaults (other family members aren’t affected)  
 - ✅ Stores only safe identifiers (never stores full card or CVV)  
-- ✅ Loop-proof — won’t get stuck reloading checkout pages  
 
 ---
 
@@ -26,8 +25,6 @@ Amazon frequently changes their checkout UI and flow, which may break this exten
 - 🛑 **Never** store your full card number or CVV  
 - 🛑 This does not bypass CVV / OTP prompts  
 - 🛑 Not affiliated with Amazon in any way  
-
-Use at your own risk.
 
 ---
 
