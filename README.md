@@ -1,3 +1,5 @@
+<p align="justify">
+   
 # Amazon Checkout Helper (Chrome Extension, MV3)
 
 A lightweight Chrome extension that automatically selects **your preferred shipping address and payment card** during Amazon checkout — without changing the account defaults.  
@@ -63,3 +65,5 @@ You’ll see:
   value="instrumentId=0h_PU_CUS_ab12cd34-ef56-7890-ab12-cd34ef567890&isExpired=false&paymentMethod=CC&...">`
 3. Copy the string after instrumentId= (e.g. 0h_PU_CUS_ab12cd34-ef56-7890-ab12-cd34ef567890)
 4. Paste this into Options → Card ID
+
+</p>
