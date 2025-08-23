@@ -2,7 +2,7 @@
    
 # Amazon Checkout Helper (Chrome Extension, MV3)
 
-A lightweight Chrome extension that automatically selects **your preferred shipping address and payment card** during Amazon checkout — without changing the account defaults.  
+A lightweight Chrome extension that automatically selects **your preferred shipping address and payment card** during Amazon checkout, without changing the account defaults.  
 
 This is especially useful for **shared Prime accounts**, business + personal cards, or just cutting through Amazon’s ever-changing checkout flow.
 
